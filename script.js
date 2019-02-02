@@ -1,6 +1,5 @@
 //When I click the play button
 // it will move to a random location on the page
-
 let button = document.getElementById("play-button");
 
 button.addEventListener("click", moveToRandom);
@@ -15,5 +14,13 @@ function moveToRandom() {
   console.log(newLeftValue);
 
   button.style.top = newTopValue + "%";
-  button.style.left = newLefValue + "%";
+  button.style.left = newLeftValue + "%";
 }
+
+button.addEventListener("mouseover", changeBGColor);
+
+function changeBGColor() {
+  button.style.backgroundColor = "blue";
+}
+
+button.addEventListener("")
