@@ -23,4 +23,8 @@ function changeBGColor() {
   button.style.backgroundColor = "blue";
 }
 
-button.addEventListener("")
+button.addEventListener("mouseout", returnToOldColor);
+
+function returnToOldColor() {
+  button.style.backgroundColor = "green";
+}
