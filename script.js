@@ -28,3 +28,26 @@ button.addEventListener("mouseout", returnToOldColor);
 function returnToOldColor() {
   button.style.backgroundColor = "green";
 }
+
+let challenge1 = document.getElementById("challenge-one");
+
+challenge1.addEventListener("dblclick", disappear);
+
+function disappear() {
+  challenge1.remove();
+}
+
+let bg1 = document.body;
+
+bg1.addEventListener("contextmenu", bgChange);
+
+function bgChange() {
+  bg1.style.backgroundImage = "url('images/pokemonBG2.png')";
+}
+
+let copyAlert = document.getElementById("page-title");
+copyAlert.addEventListener("copy", sendAlert);
+
+function sendAlert() {
+  alert("You are entering the land of the unknown. Reconsider your choices!");
+}
